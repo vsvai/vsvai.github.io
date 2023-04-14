@@ -55,5 +55,5 @@ export default defineConfig({
       }
     },
   },
-  base: "/",
+  base: "/teragen/",
 });
