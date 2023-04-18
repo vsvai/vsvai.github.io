@@ -2,7 +2,6 @@ import home from "./views/index.html?raw";
 import product from "./views/products.html?raw";
 import about from "./views/about.html?raw";
 import service from "./views/service.html?raw";
-import nav from "./views/components/navbar.html?raw";
 
 import "./style.css";
 
