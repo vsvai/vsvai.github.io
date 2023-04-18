@@ -22,7 +22,7 @@ a {
 a:hover {
   color: white;
 }
-
+html,
 body {
   /* position: relative; */
   overflow-x: hidden;
@@ -35,10 +35,7 @@ body {
 @media screen and (max-width: 479px) {
   body {
     /* position: fixed; */
-    width: 100vw;
-  }
-  body:hover {
-    /* position: static; */
+    width: auto;
   }
 }
 
