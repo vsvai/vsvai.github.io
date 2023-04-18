@@ -2,12 +2,12 @@ import "./style.css";
 import "./views/components/main.ts";
 
 const nav = document.querySelector("#nav");
-const menu = document.querySelector("#menu");
-const menuToggle = document.querySelector(".nav__toggle");
+const menu: any = document.querySelector("#menu");
+const menuToggle: any = document.querySelector(".nav__toggle");
 let isMenuOpen = false;
 
 // TOGGLE MENU ACTIVE STATE
-menuToggle?.addEventListener("click", (e) => {
+menuToggle?.addEventListener("click", (e: any) => {
   e.preventDefault();
   console.log("muny", isMenuOpen);
   isMenuOpen = !isMenuOpen;
@@ -36,7 +36,7 @@ document.querySelectorAll('[href^="/"]').forEach((el) =>
 );
 
 // TRAP TAB INSIDE NAV WHEN OPEN
-nav?.addEventListener("keydown", (e) => {
+nav?.addEventListener("keydown", (e: any) => {
   if (!e) return;
   // abort if menu isn't open or modifier keys are pressed
   if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
