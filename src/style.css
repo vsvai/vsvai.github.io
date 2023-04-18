@@ -24,19 +24,24 @@ a:hover {
 }
 
 body {
-
+  /* position: relative; */
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 0;
   margin: 0;
   width: 100%;
 }
-.main {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 100vh;
-  margin: 0;
+/* body for mobile screen */
+@media screen and (max-width: 479px) {
+  body {
+    /* position: fixed; */
+    width: 100vw;
+  }
+  body:hover {
+    /* position: static; */
+  }
 }
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
