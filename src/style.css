@@ -29,13 +29,13 @@ body {
   overflow-y: scroll;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 100vw;
 }
 /* body for mobile screen */
 @media screen and (max-width: 479px) {
   body {
     /* position: fixed; */
-    width: auto;
+    width: 100vw;
   }
 }
 

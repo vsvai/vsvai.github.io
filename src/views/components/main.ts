@@ -1,15 +1,18 @@
 import navbar from "./navbar.html?raw";
 import footbar from "./footbar.html?raw";
-// import arrowRight from "./svg/arrowRight.svg";
+
 import mobileNav from "./mobileNav.html?raw";
 
-// import "../../style.css";
+const navElement = document.querySelector<HTMLDivElement>("#navbar");
+if (navElement) {
+  navElement.innerHTML = navbar;
+}
 
-// console.log("navbar", navbar); mobileNav
-
-document.querySelector<HTMLDivElement>("#navbar")!.innerHTML = navbar;
-document.querySelector<HTMLDivElement>("#mobileNav")!.innerHTML = mobileNav;
-
-document.querySelector<HTMLDivElement>("#footbar")!.innerHTML = footbar;
-
-// document.querySelector("#arrowRight")!.innerHTML = arrowRight;
+const footbarElement = document.querySelector<HTMLDivElement>("#footbar");
+if (footbarElement) {
+  footbarElement.innerHTML = footbar;
+}
+const mobileNavElement = document.querySelector<HTMLDivElement>("#mobileNav");
+if (mobileNavElement) {
+  mobileNavElement.innerHTML = mobileNav;
+}

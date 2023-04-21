@@ -1,4 +1,5 @@
 import "./style.css";
+// import "./routes.ts";
 import "./views/components/main.ts";
 
 const nav = document.querySelector("#nav");
@@ -6,10 +7,8 @@ const menu: any = document.querySelector("#menu");
 const menuToggle: any = document.querySelector(".nav__toggle");
 let isMenuOpen = false;
 
-// TOGGLE MENU ACTIVE STATE
 menuToggle?.addEventListener("click", (e: any) => {
   e.preventDefault();
-  console.log("muny", isMenuOpen);
   isMenuOpen = !isMenuOpen;
 
   // toggle a11y attributes and active class
@@ -23,7 +22,6 @@ menuToggle?.addEventListener("click", (e: any) => {
 document.querySelectorAll('[href^="/"]').forEach((el) =>
   el?.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("muny", isMenuOpen);
     isMenuOpen = !isMenuOpen;
 
     // toggle a11y attributes and active class

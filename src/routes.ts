@@ -6,9 +6,6 @@ import nav from "./views/components/navbar.html?raw";
 
 import "./style.css";
 
-// const nav = `<a href="/">Home</a> |
-//                    <a href="/product">About</a> |
-//                    <a href="/contact">Contact</a>`;
 const routes: Record<string, string> = {
   "/": `${home} `,
   "/home": `${home} `,
