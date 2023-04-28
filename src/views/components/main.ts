@@ -1,3 +1,5 @@
+import "../../index.css";
+
 import navbar from "./navbar.html?raw";
 import footbar from "./footbar.html?raw";
 

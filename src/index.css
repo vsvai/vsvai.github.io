@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -42,12 +46,6 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-#app {
-  margin: 0 auto;
-
-  text-align: center;
 }
 
 .logo {
@@ -273,6 +271,7 @@ p {
 .section_01 {
   display: flex;
   padding: 50px 5%;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -1039,7 +1038,12 @@ p {
     margin-right: 15px;
   }
 }
-
+.hero_img {
+  width: 100%;
+  height: auto;
+  min-width: 18rem;
+  max-width: 30rem;
+}
 @media screen and (max-width: 767px) {
   .header-08 {
     padding-top: 167px;
@@ -1112,6 +1116,9 @@ p {
 
   .hero_img {
     width: 100%;
+    height: auto;
+    min-width: 18rem;
+    max-width: 25rem;
   }
 
   .my-product-wrap {

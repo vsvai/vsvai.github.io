@@ -1,6 +1,6 @@
-import "./style.css";
 // import "./routes.ts";
 import "./views/components/main.ts";
+import "./index.css";
 
 const nav = document.querySelector("#nav");
 const menu: any = document.querySelector("#menu");

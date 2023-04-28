@@ -1,15 +1,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpg" href="/mainlogo.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="/mainlogo.jpg" />
+    <link rel="stylesheet" href="/index.css" />
+
     <meta
       content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1eQ2zhstgMY5_Q5h-337rVY71vB27eDf9qg0uiOaptA&usqp=CAU&ec=48665698"
       property="twitter:image"
     />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
-    <meta charset="utf-8" />
+
     <title>Next Gen Lab</title>
     <meta content="Next Gen Lab" property="og:title" />
     <meta content="Next Gen Lab" property="twitter:title" />
@@ -59,9 +62,45 @@
     <div id="navbar"></div>
 
     <div id="mobileNav"></div>
+
     <div id="app"></div>
+
     <div id="footbar"></div>
+    <section
+      id="cookie"
+      class="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-gray-800 left-12 bottom-16 dark:border-gray-700 rounded-2xl"
+    >
+      <h2 class="font-semibold text-gray-800 dark:text-white">
+        🍪 Cookie Notice
+      </h2>
+
+      <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
+        We use cookies to ensure that we give you the best experience on our
+        website.
+        <a href="/cookies" class="text-blue-500 hover:underline"
+          >Read cookies policies</a
+        >.
+      </p>
+
+      <div class="flex justify-end mt-4 gap-x-4 shrink-0 items-end">
+        <button
+          onclick="closeCookies()"
+          class="text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+        >
+          Accept
+        </button>
+      </div>
+      <script>
+        const cookie = document.getElementById("cookie");
+        function closeCookies() {
+          cookie.style.display = "none";
+        }
+      </script>
+    </section>
+
     <script type="module" src="/src/main.ts"></script>
     <script type="module" src="/src/routes.ts"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>

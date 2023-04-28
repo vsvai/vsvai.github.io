@@ -3,8 +3,7 @@ import product from "./views/products.html?raw";
 import about from "./views/about.html?raw";
 import service from "./views/service.html?raw";
 import nav from "./views/components/navbar.html?raw";
-
-import "./style.css";
+import "./index.css";
 
 const routes: Record<string, string> = {
   "/": `${home} `,
@@ -19,7 +18,7 @@ let oldlink = "";
 const render = (path: any): void => {
   try {
     document.querySelector("#app")!.innerHTML =
-      routes[path] || `<h1>404</h1>${nav}`;
+      routes[path] || `<h1> 404</h1>${nav}`;
     document.querySelectorAll('[href^="/"]').forEach((el) =>
       el.addEventListener("click", (evt: any) => {
         evt.preventDefault();

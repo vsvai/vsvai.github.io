@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import autoprefixer from "autoprefixer";
+import tailwindcss from "tailwindcss";
 import compress from "vite-plugin-compression";
 import imageMin from "vite-plugin-imagemin";
 
@@ -10,10 +11,11 @@ const isProd = process.env.NODE_ENV === "production";
 export default defineConfig({
   css: {
     postcss: {
-      plugins: [autoprefixer()],
+      plugins: [tailwindcss, autoprefixer],
     },
   },
   plugins: [
+    tailwindcss(),
     imageMin({
       svgo: {
         // https://github.com/svg/svgo#built-in-plugins
