@@ -92,8 +92,13 @@
       </div>
       <script>
         const cookie = document.getElementById("cookie");
+        const cookieDisable = localStorage.getItem("cookieDisable");
+        if (cookieDisable) {
+          cookie.style.display = "none";
+        }
         function closeCookies() {
           cookie.style.display = "none";
+          localStorage.setItem("cookieDisable", true);
         }
       </script>
     </section>

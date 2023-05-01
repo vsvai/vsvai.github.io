@@ -1,7 +1,11 @@
 import home from "./views/index.html?raw";
 import product from "./views/products.html?raw";
 import about from "./views/about.html?raw";
-import service from "./views/service.html?raw";
+import work from "./views/work.html?raw";
+import team from "./views/team.html?raw";
+import blog from "./views/blog.html?raw";
+import contact from "./views/contact.html?raw";
+import data from "./views/data.html?raw";
 import "./index.css";
 
 const routes: Record<string, string> = {
@@ -9,7 +13,11 @@ const routes: Record<string, string> = {
   "/home": `${home} `,
   "/about": `${about} `,
   "/product": ` ${product} `,
-  "/work": ` ${service} `,
+  "/work": ` ${work} `,
+  "/team": ` ${team} `,
+  "/blog": ` ${blog} `,
+  "/contact": ` ${contact} `,
+  "/data": ` ${data} `,
 };
 
 let oldlink = "";
