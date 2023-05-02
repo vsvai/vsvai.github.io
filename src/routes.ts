@@ -10,15 +10,15 @@ import "./index.css";
 
 const routes: Record<string, string> = {
   "/": home,
-  "/home": home,
-  "/about": about,
-  "/product": product,
-  "/work": work,
-  "/team": team,
-  "/blog": blog,
-  "/contact": contact,
-  "/data": data,
-  "/404": data,
+  "/#home": home,
+  "/#about": about,
+  "/#product": product,
+  "/#work": work,
+  "/#team": team,
+  "/#blog": blog,
+  "/#contact": contact,
+  "/#data": data,
+  "/#404": data,
 };
 
 const rootDiv: any = document.getElementById("app");
