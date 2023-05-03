@@ -114,6 +114,20 @@
 
     <script type="module" src="/src/main.ts"></script>
     <script type="module" src="/src/routes.ts"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-N3W7ZB0SND"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-N3W7ZB0SND");
+    </script>
     <!-- <script src="./node_modules/preline/dist/preline.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script> -->
   </body>
