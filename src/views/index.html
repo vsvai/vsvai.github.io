@@ -1,14 +1,4 @@
-<section
-  style="
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.8)
-      ),
-      url(' /robot/IMG-20230416-WA0020.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  "
->
+<section style="background-repeat: no-repeat" class="background">
   <!-- Hero -->
   <div
     class="relative overflow-hidden before:absolute before:top-0 before:left-1/2 before:bg-no-repeat before:bg-top before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-[url('../svg/component/squared-bg-element-dark.svg')]"
@@ -18,7 +8,9 @@
       <div class="flex justify-center">
         <a
           class="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400"
-          href="/about"
+          href="#"
+          onclick="onNavigate('/#about'); return false;"
+          aria-label="Brand"
         >
           Sudo Yantra India
           <span class="flex items-center gap-x-1">
