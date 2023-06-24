@@ -44,7 +44,7 @@
 // console.log(products);
 // const heading = document.getElementById("heading");
 // heading!.innerHTML = products[0].name;
-
+export {};
 // // path eventlistner
 // (window as any).productId = productId;
 // (window as any).heading = heading;
