@@ -32,6 +32,7 @@ const rootDiv: any = document.getElementById("app");
 rootDiv.innerHTML = routes[window.location.pathname.split("?")[0]];
 
 const onNavigate = (pathname: string): void => {
+  window.scrollTo(0, 0);
   window.history.pushState({}, pathname, window.location.origin + pathname);
   rootDiv.innerHTML =
     routes[pathname.split("?")[0]] ||
@@ -64,5 +65,18 @@ const onNavigate = (pathname: string): void => {
 window.onpopstate = () => {
   rootDiv.innerHTML = routes[window.location.pathname];
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log(window.location.href);
+  console.log(window.location.hash);
+  onNavigate("/" + window.location.hash);
+  return;
+});
+
+window.addEventListener("hashchange", () => {
+  console.log(window.location.hash);
+  onNavigate("/" + window.location.hash);
+  return false;
+});
 
 (window as any).onNavigate = onNavigate;
