@@ -44,7 +44,7 @@ const submitNewsLetter = async (): Promise<void> => {
     });
 };
 
-const submitContactLetter = async (e: any): Promise<void> => {
+const submitContactLetter = async (): Promise<void> => {
   const contactForm = <HTMLDivElement | any>(
     document.getElementById("contact-form")
   );
@@ -52,7 +52,6 @@ const submitContactLetter = async (e: any): Promise<void> => {
     document.getElementById("contact-button")
   );
 
-  console.log("contact form", contactForm);
   const first_name = contactForm.first_name;
   const last_name = contactForm.last_name;
   const email = contactForm.email;
