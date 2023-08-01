@@ -1,19 +1,17 @@
 <span>
   <!-- This is an example component -->
   <div
-    class="max-w-6xl w-80 px-2 py-6 sm:px-4 lg:px-4 lg:py-10 mx-auto fixed right-0 z-50 bottom-0"
+    class="max-w-6xl w-80 px-2 py-6 sm:px-4 lg:px-4 lg:py-10 mx-auto fixed right-0 z-50 bottom-0 mb-[5rem]"
   >
     <!-- Grid -->
-    <div
-      class="grid sm:grid-rows-2 lg:grid-rows-3 max-w-xs gap-2 sm:gap-6 justify-end items-end"
-    >
+    <div class="flex flex-col gap-5 justify-end items-end">
       <!-- Card -->
       <a
-        class="group flex flex-col bg-white border overflow-hidden shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 bg-opacity-60 hover:bg-opacity-90"
+        class="group flex flex-col bg-white border overflow-hidden shadow-lg rounded-xl hover:shadow-lg transition dark:bg-slate-900 dark:border-gray-800 bg-opacity-90 hover:bg-opacity-100"
         onclick="onNavigate('/#contact'); return false;"
       >
         <div class="p-4 md:p-5">
-          <div class="flex">
+          <div class="flex items-center">
             <svg
               class="shrink-0 w-5 h-5 text-gray-800 dark:text-gray-200"
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +25,7 @@
               />
             </svg>
 
-            <div class="grow ml-5">
+            <div class="grow ml-5 hidden group-hover:block">
               <h3
                 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200"
               >
@@ -42,7 +40,7 @@
 
       <!-- Card -->
       <a
-        class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 bg-opacity-60 hover:bg-opacity-90"
+        class="group flex flex-col bg-white border shadow-md rounded-xl hover:shadow-lg transition dark:bg-slate-900 dark:border-gray-800 bg-opacity-90 hover:bg-opacity-100"
         href="https://wa.me/+919984045295"
         target="_blank"
       >
@@ -63,7 +61,7 @@
               />
             </svg>
 
-            <div class="grow ml-5">
+            <div class="grow ml-5 hidden group-hover:block">
               <h3
                 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200"
               >
@@ -83,7 +81,7 @@
 
       <!-- Card -->
       <a
-        class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 bg-opacity-60 hover:bg-opacity-90"
+        class="group flex flex-col bg-white border shadow-md rounded-xl hover:shadow-lg transition dark:bg-slate-900 dark:border-gray-800 bg-opacity-90 hover:bg-opacity-100"
         href="mailto:info@sudoyantra.com"
         target="_blank"
       >
@@ -102,7 +100,7 @@
               />
             </svg>
 
-            <div class="grow ml-5">
+            <div class="grow ml-5 hidden group-hover:block">
               <h3
                 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200"
               >
@@ -119,7 +117,7 @@
       </a>
       <!-- End Card -->
       <!-- <a
-        class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+        class="group flex flex-col bg-white border shadow-md rounded-xl hover:shadow-lg transition dark:bg-slate-900 dark:border-gray-800"
         href="https://www.linkedin.com/company/sudoyantra/"
         target="_blank"
       >
@@ -206,7 +204,7 @@
       <div id="default-carousel" class="relative" data-carousel="static">
         <!-- Carousel wrapper -->
         <div
-          class="overflow-hidden relative h-96 rounded-none sm:h-96 xl:h-[30rem] 2xl:h-[30rem]"
+          class="overflow-hidden relative h-96 rounded-none xl:h-[30rem] 2xl:h-[30rem]"
         >
           <!-- Item 1 -->
           <div class="duration-700 ease-in-out" data-carousel-item>
@@ -216,7 +214,7 @@
             >
             <img
               src="/site/Devikot_site1.jpg"
-              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
               alt="..."
             />
             <div
@@ -283,15 +281,56 @@
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="/site/devikot_site3.jpg"
-              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
               alt="..."
             />
+            <div
+              class="max-w-[85rem] flex justify-end px-4 py-10 sm:px-4 lg:px-4 lg:py-14 mx-auto"
+            >
+              <!-- Grid -->
+              <div class="grid items-end lg:grid-cols-12 gap-6 lg:gap-12">
+                <!-- End Col -->
+
+                <div
+                  class="bg-white p-4 lg:col-span-8 relative lg:before:absolute lg:before:top-0 lg:before:-left-12 lg:before:w-px lg:before:h-full lg:before:bg-gray-200 lg:before:dark:bg-gray-700"
+                >
+                  <div
+                    class="max-w-2xl grid gap-6 grid-cols-2 md:grid-cols-4 lg:grid-cols-3 sm:gap-8"
+                  >
+                    <!-- Stats -->
+                    <div>
+                      <p class="text-3xl font-semibold text-blue-500">100%</p>
+                      <p class="mt-1 text-gray-500">
+                        Autonomous cleaning sessions
+                      </p>
+                    </div>
+                    <!-- End Stats -->
+
+                    <!-- Stats -->
+                    <div>
+                      <p class="text-3xl font-semibold text-blue-500">100%</p>
+                      <p class="mt-1 text-gray-500">Online Monitoring</p>
+                    </div>
+                    <!-- End Stats -->
+
+                    <!-- Stats -->
+                    <div>
+                      <p class="text-3xl font-semibold text-blue-500">100%</p>
+                      <p class="mt-1 text-gray-500">Water Saved</p>
+                    </div>
+                    <!-- End Stats -->
+                  </div>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Grid -->
+            </div>
           </div>
           <!-- Item 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="/site/devikot_site4.jpg"
-              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
               alt="..."
             />
           </div>
@@ -381,7 +420,123 @@
 
     <!-- End Hero -->
 
+    <!-- Features -->
+
+    <!-- End Features -->
+
     <!-- Icon Blocks -->
+    <!-- Testimonials with Stats -->
+    <div class="max-w-[70rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Grid -->
+      <div
+        class="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center lg:justify-between"
+      >
+        <div class="lg:col-span-5 lg:col-start-1">
+          <!-- Title -->
+          <div class="mb-8">
+            <h2
+              class="mb-2 text-3xl text-gray-800 font-bold lg:text-4xl dark:text-gray-200"
+            >
+              It's all about speed and Quality
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400">
+              Our Customizable PV panels Cleaning Robot will Improve the
+              Cleaning On Time.
+            </p>
+          </div>
+          <!-- End Title -->
+
+          <!-- Blockquote -->
+          <blockquote class="relative">
+            <div class="relative z-10">
+              <p class="text-xl italic text-gray-800 dark:text-white">
+                On Time .
+              </p>
+            </div>
+
+            <footer class="mt-6">
+              <div class="flex items-center">
+                <div class="grow ml-4">
+                  <div class="font-semibold text-gray-800 dark:text-gray-200">
+                    Cloud Monitoring
+                  </div>
+                  <div class="text-xs text-gray-500">
+                    Direct Connectivity and Controlling
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+          <!-- End Blockquote -->
+        </div>
+        <!-- End Col -->
+
+        <div class="mt-10 lg:mt-0 lg:col-span-6 lg:col-end-13">
+          <div class="space-y-6 sm:space-y-8">
+            <!-- List -->
+            <ul
+              class="grid grid-cols-2 divide-y divide-y-2 divide-x divide-x-2 divide-gray-200 overflow-hidden dark:divide-gray-700"
+            >
+              <li class="flex flex-col -m-0.5 p-4 sm:p-8">
+                <div
+                  class="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-gray-800 mb-2 dark:text-gray-200"
+                >
+                  100%
+                </div>
+                <p
+                  class="text-sm sm:text-base text-gray-600 dark:text-gray-400"
+                >
+                  No Water Solution
+                </p>
+              </li>
+
+              <li class="flex flex-col -m-0.5 p-4 sm:p-8">
+                <div
+                  class="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-gray-800 mb-2 dark:text-gray-200"
+                >
+                  100%
+                </div>
+                <p
+                  class="text-sm sm:text-base text-gray-600 dark:text-gray-400"
+                >
+                  Listen The site needs
+                </p>
+              </li>
+
+              <li class="flex flex-col -m-0.5 p-4 sm:p-8">
+                <div
+                  class="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-gray-800 mb-2 dark:text-gray-200"
+                >
+                  1
+                </div>
+                <p
+                  class="text-sm sm:text-base text-gray-600 dark:text-gray-400"
+                >
+                  Priority is Solving Site Problems
+                </p>
+              </li>
+
+              <li class="flex flex-col -m-0.5 p-4 sm:p-8">
+                <div
+                  class="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-gray-800 mb-2 dark:text-gray-200"
+                >
+                  2x
+                </div>
+                <p
+                  class="text-sm sm:text-base text-gray-600 dark:text-gray-400"
+                >
+                  faster Site Setup
+                </p>
+              </li>
+            </ul>
+            <!-- End List -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Grid -->
+    </div>
+    <!-- End Testimonials with Stats -->
     <div
       class="max-w-[85rem] bg-white px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
     >
@@ -789,7 +944,7 @@
             >
               <button
                 type="button"
-                class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700 active"
+                class="hs-tab-active:bg-white hs-tab-active:shadow-lg hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700 active"
                 id="tabs-with-card-item-1"
                 data-hs-tab="#tabs-with-card-1"
                 aria-controls="tabs-with-card-1"
@@ -826,7 +981,7 @@
 
               <button
                 type="button"
-                class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700"
+                class="hs-tab-active:bg-white hs-tab-active:shadow-lg hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700"
                 id="tabs-with-card-item-2"
                 data-hs-tab="#tabs-with-card-2"
                 aria-controls="tabs-with-card-2"
@@ -862,7 +1017,7 @@
 
               <button
                 type="button"
-                class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700"
+                class="hs-tab-active:bg-white hs-tab-active:shadow-lg hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700"
                 id="tabs-with-card-item-3"
                 data-hs-tab="#tabs-with-card-3"
                 aria-controls="tabs-with-card-3"
@@ -1081,7 +1236,7 @@
               id="hero-input"
               name="hero-input"
               required
-              class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-md focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+              class="py-3 px-4 block w-full border-gray-200 shadow-md rounded-md focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
               placeholder="Enter your email"
             />
           </div>
