@@ -1,7 +1,7 @@
 <span>
   <!-- This is an example component -->
   <div
-    class="max-w-6xl w-80 px-2 py-6 sm:px-4 lg:px-4 lg:py-10 mx-auto fixed right-0 z-50 bottom-0 mb-[5rem]"
+    class="max-w-6xl w-80 px-2 py-6 sm:px-4 lg:px-4 lg:py-4 mx-auto fixed right-0 z-50 bottom-0 mb-[3rem]"
   >
     <!-- Grid -->
     <div class="flex flex-col gap-5 justify-end items-end">
@@ -207,7 +207,7 @@
           class="overflow-hidden relative h-96 rounded-none xl:h-[30rem] 2xl:h-[30rem]"
         >
           <!-- Item 1 -->
-          <div class="duration-700 ease-in-out" data-carousel-item>
+          <div class="duration-700 ease-in-out image" data-carousel-item>
             <span
               class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
               >First Slide</span
@@ -278,7 +278,7 @@
             </div>
           </div>
           <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="duration-700 ease-in-out image" data-carousel-item>
             <img
               src="/site/devikot_site3.jpg"
               class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
@@ -327,7 +327,7 @@
             </div>
           </div>
           <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="duration-700 ease-in-out image" data-carousel-item>
             <img
               src="/site/devikot_site4.jpg"
               class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
@@ -414,8 +414,25 @@
         </button>
       </div>
 
-      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+      <script>
+        let index = 0;
+        displayImages();
+        function displayImages() {
+          let i;
+          const images = document.getElementsByClassName("image");
+          for (i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+          }
+          index++;
+          if (index > images.length) {
+            index = 1;
+          }
+          images[index - 1].style.display = "block";
+          setTimeout(displayImages, 2000);
+        }
+      </script>
     </div>
+
     <!-- Hero -->
 
     <!-- End Hero -->

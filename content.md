@@ -83,17 +83,48 @@ PLANNING
 COLLABORATION
 Tight interact
 
-
-
 # images needed
 
 - 1. Make in India
 - 2. Before After Image
 - 3. Solar Panel Cleaning Robot Solution
 - 4. OUR CUSTOMIZATION
-- 5. PERFORMANCE ICON, GEAR ICONS, 
+- 5. PERFORMANCE ICON, GEAR ICONS,
 - 6. 3D MODEL
 - 7. SOLAR EFFICIENCY
-- 8. MARKET OVERVIEW [ HAND CLEANING, WATER CLEANING, NO RELIAVBLE SOLUTION IN INDIA, REPAIRING SERVICES, CUSTOMIZATION SERVICES, EXPENSIVE ] 
-- 9. LOGO WITH NAME 
+- 8. MARKET OVERVIEW [ HAND CLEANING, WATER CLEANING, NO RELIAVBLE SOLUTION IN INDIA, REPAIRING SERVICES, CUSTOMIZATION SERVICES, EXPENSIVE ]
+- 9. LOGO WITH NAME
 - 10. PROXIMITY AND LIMIT SWITCHES
+
+// about us
+
+Sudoayntra: Empowering New Energy with Intelligent O&M Solutions
+
+Sudoayntra is a pioneering Indian startup at the forefront of revolutionizing the new energy landscape. Focused on the optimization and efficient operation of photovoltaic power plants, we offer a comprehensive suite of integrated intelligent operation and maintenance (O&M) equipment, software, and services.
+
+Our Vision:
+At Sudoayntra, our vision is clear: to propel the growth of new energy photovoltaic power generation enterprises through innovative, intelligent, and sustainable O&M solutions. We are committed to driving the adoption of cutting-edge technologies that enhance the performance, reliability, and longevity of photovoltaic power plants.
+
+Key Offerings:
+Our holistic approach to O&M encompasses a range of essential components:
+
+Advanced Equipment: We provide state-of-the-art equipment designed to monitor, diagnose, and maintain photovoltaic systems with precision and effectiveness.
+
+Intelligent Software: Our proprietary software solutions leverage artificial intelligence and data analytics to optimize plant performance, predict potential issues, and streamline maintenance processes.
+
+Expert Services: Our team of seasoned professionals offers expert guidance, periodic inspections, and swift troubleshooting to ensure uninterrupted energy generation.
+
+Comprehensive Solutions: Sudoayntra delivers end-to-end solutions that cover the entire lifecycle of photovoltaic power plants, from installation to long-term operation.
+
+Why Choose Sudoayntra?
+
+Innovation: We are driven by innovation, constantly pushing boundaries to develop and implement pioneering technologies in the field of new energy.
+
+Reliability: Our solutions are built on a foundation of reliability, ensuring minimal downtime and maximizing energy output for our clients.
+
+Sustainability: We are committed to sustainable energy practices, helping our clients contribute to a cleaner and greener future.
+
+Expertise: With a team of experts well-versed in the intricacies of new energy technology, we offer unparalleled insights and solutions.
+
+Sudoayntra: Where Technology Meets Sustainability
+Join us in our journey to redefine the future of new energy photovoltaic power generation. Together, we'll harness the power of innovation to create a world where clean energy thrives, supported by intelligent and efficient operation and maintenance solutions.
