@@ -93,14 +93,14 @@ const submitContactLetter = async (): Promise<void> => {
 (window as any).submitNewsLetter = submitNewsLetter;
 (window as any).submitContactLetter = submitContactLetter;
 
-var curpage = 1;
-var sliding = false;
-var click = true;
-var left = document.getElementById("left");
-var right = document.getElementById("right");
-var pagePrefix = "slide";
-var transitionPrefix = "circle";
-var svg = true;
+let curpage = 1;
+let sliding = false;
+let click = true;
+let left = document.getElementById("left");
+let right = document.getElementById("right");
+let pagePrefix = "slide";
+let transitionPrefix = "circle";
+let svg = true;
 
 function leftSlide() {
   if (click) {
@@ -119,7 +119,7 @@ function leftSlide() {
     }, 200);
     setTimeout(() => {
       for (let k = 1; k <= 4; k++) {
-        var a1 = document.getElementById(pagePrefix + k);
+        let a1 = document.getElementById(pagePrefix + k);
         a1!.classList.remove("tran");
       }
     }, 1400);
@@ -135,7 +135,7 @@ function rightSlide() {
     svg = false;
     click = false;
     for (let k = 1; k <= 4; k++) {
-      var a1 = document.getElementById(pagePrefix + k);
+      let a1 = document.getElementById(pagePrefix + k);
       a1!.className += " tran";
     }
     setTimeout(() => {
@@ -143,7 +143,7 @@ function rightSlide() {
     }, 2000);
     setTimeout(() => {
       for (let k = 1; k <= 4; k++) {
-        var a1 = document.getElementById(pagePrefix + k);
+        let a1 = document.getElementById(pagePrefix + k);
         a1!.classList.remove("tran");
       }
     }, 1400);
@@ -155,14 +155,14 @@ function move() {
     sliding = false;
     if (svg) {
       for (let j = 1; j <= 9; j++) {
-        var c = document.getElementById(transitionPrefix + j);
+        let c = document.getElementById(transitionPrefix + j);
         c!.classList.remove("steap");
         c!.setAttribute("class", transitionPrefix + j + " streak");
         console.log("streak");
       }
     } else {
       for (let j = 10; j <= 18; j++) {
-        var c = document.getElementById(transitionPrefix + j);
+        let c = document.getElementById(transitionPrefix + j);
         c!.classList.remove("steap");
         c!.setAttribute("class", transitionPrefix + j + " streak");
         console.log("streak");
@@ -171,10 +171,10 @@ function move() {
     setTimeout(() => {
       for (let i = 1; i <= 4; i++) {
         if (i == curpage) {
-          var a = document.getElementById(pagePrefix + i);
+          let a = document.getElementById(pagePrefix + i);
           a!.className += " up1";
         } else {
-          var b = document.getElementById(pagePrefix + i);
+          let b = document.getElementById(pagePrefix + i);
           b!.classList.remove("up1");
         }
       }
@@ -187,13 +187,13 @@ function move() {
     setTimeout(() => {
       if (svg) {
         for (let j = 1; j <= 9; j++) {
-          var c = document.getElementById(transitionPrefix + j);
+          let c = document.getElementById(transitionPrefix + j);
           c!.classList.remove("streak");
           c!.setAttribute("class", transitionPrefix + j + " steap");
         }
       } else {
         for (let j = 10; j <= 18; j++) {
-          var c = document.getElementById(transitionPrefix + j);
+          let c = document.getElementById(transitionPrefix + j);
           c!.classList.remove("streak");
           c!.setAttribute("class", transitionPrefix + j + " steap");
         }
