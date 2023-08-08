@@ -99,7 +99,6 @@ var click = true;
 var left = document.getElementById("left");
 var right = document.getElementById("right");
 var pagePrefix = "slide";
-var pageShift = 500;
 var transitionPrefix = "circle";
 var svg = true;
 
