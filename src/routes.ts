@@ -9,6 +9,7 @@ import contact from "./views/contact.html?raw";
 import data from "./views/data.html?raw";
 import demo from "./views/demo.html?raw";
 import faq from "./views/faq.html?raw";
+import solution from "./views/solution.html?raw";
 
 import "./index.css";
 
@@ -16,12 +17,13 @@ const routes: Record<string, string> = {
   "/": home,
   "/#home": home,
   "/#about": about,
-  "/#product": product,
+  // "/#product": product,
   "/#product-details": productDetails,
-  "/#work": work,
+  // "/#work": work,
   "/#team": team,
   "/#blog": blog,
   "/#contact": contact,
+  "/#solution": solution,
   "/#data": data,
   "/#demo": demo,
   "/#faq": faq,
