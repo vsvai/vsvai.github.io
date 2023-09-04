@@ -1,5 +1,5 @@
 import home from "./views/index.html?raw";
-//import product from "./views/products.html?raw";
+import product from "./views/products.html?raw";
 import productDetails from "./views/product_details.html?raw";
 import about from "./views/about.html?raw";
 //import work from "./views/work.html?raw";
@@ -17,7 +17,7 @@ const routes: Record<string, string> = {
   "/": home,
   "/#home": home,
   "/#about": about,
-  // "/#product": product,
+  "/#product": product,
   "/#product-details": productDetails,
   // "/#work": work,
   "/#team": team,
