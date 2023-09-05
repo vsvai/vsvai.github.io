@@ -226,16 +226,16 @@ circle {
   background-color: black;
 }
 .slide1 {
-  background-image: url("/devikot_site_2.jpg");
+  background-image: url("/site/Devikot_site1.jpg");
 }
 .slide2 {
-  background-image: url("/devikot_site_3.jpg");
+  background-image: url("/site/devikot_site3.jpg");
 }
 .slide3 {
-  background-image: url("/devikot_site_4.jpg");
+  background-image: url("/site/devikot_site7.jpg");
 }
 .slide4 {
-  background-image: url("/devikot_site_5.jpg");
+  background-image: url("/site/devikot_site5.jpg");
 }
 .slider {
   position: absolute;
