@@ -20,18 +20,18 @@
       <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
         <div class="overflow-hidden overflow-y-auto max-h-[75vh] scrollbar-y">
           <div class="flex flex-col gap-x-0 mt-5 divide-y divide-dashed divide-gray-200 md:flex-row md:items-center md:justify-end md:gap-x-7 md:mt-0 md:pl-7 md:divide-y-0 md:divide-solid dark:divide-gray-700">
-            <a class="font-medium text-blue-600 py-3 md:py-6 dark:text-blue-500" href="#" onclick="onNavigate('/'); return false;" aria-current="page">Home</a>
-            <a class="font-medium  py-3 md:py-6 dark:text-blue-500" href="#" onclick="onNavigate('/#about'); return false;" aria-current="page">About</a>
-            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" href="#" onclick="onNavigate('/#product'); return false;">
+            <a class="font-medium text-blue-600 py-3 md:py-6 dark:text-blue-500" id="home" href="#" onclick="onNavigate('/'); return false;" aria-current="page">Home</a>
+            <a class="font-medium  py-3 md:py-6 dark:text-blue-500" id="about" href="#" onclick="onNavigate('/#about'); return false;" aria-current="page">About</a>
+            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" id="product" href="#" onclick="onNavigate('/#product'); return false;">
               Product
             </a>
-            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" href="#" onclick="onNavigate('/#solution'); return false;">
+            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" id="solution" href="#" onclick="onNavigate('/#solution'); return false;">
               Solutions
             </a>
-            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" href="#" onclick="onNavigate('/#work'); return false;">
+            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" id="work" href="#" onclick="onNavigate('/#work'); return false;">
               Work
             </a>
-            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" href="#" onclick="onNavigate('/#contact'); return false;">
+            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" id="contact" href="#" onclick="onNavigate('/#contact'); return false;">
               Contact
             </a>
             <div class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] py-3 md:py-6">
@@ -67,13 +67,13 @@
 
                 <div class="my-2 border-t border-gray-100 dark:border-gray-800"></div>
 
-                <a class="inline-flex gap-x-5 w-full p-4 text-gray-600 rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#" onclick="onNavigate('/#blog'); return false;">
+                <!-- <a class="inline-flex gap-x-5 w-full p-4 text-gray-600 rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"  href="#" onclick="onNavigate('/#blog'); return false;">
                
                   <div class="grow">
                     <span class="block font-semibold mb-1 text-gray-800 dark:text-gray-200">Blog</span>
                   
                   </div>
-                </a>
+                </a> -->
               </div>
             </div>
             <!-- <div class="pt-3 md:pt-0">
@@ -83,6 +83,7 @@
             </div> -->
             <div class="pt-3 md:pt-0"></div>
           </div>
+        
         </div>
       </div>
     </div>

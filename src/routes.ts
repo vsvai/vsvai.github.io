@@ -2,7 +2,7 @@ import home from "./views/index.html?raw";
 import product from "./views/products.html?raw";
 import productDetails from "./views/product_details.html?raw";
 import about from "./views/about.html?raw";
-//import work from "./views/work.html?raw";
+import work from "./views/work.html?raw";
 import team from "./views/team.html?raw";
 import blog from "./views/blog.html?raw";
 import contact from "./views/contact.html?raw";
@@ -12,6 +12,7 @@ import faq from "./views/faq.html?raw";
 import solution from "./views/solution.html?raw";
 
 import "./index.css";
+import path from "path";
 
 const routes: Record<string, string> = {
   "/": home,
@@ -19,7 +20,7 @@ const routes: Record<string, string> = {
   "/#about": about,
   "/#product": product,
   "/#product-details": productDetails,
-  // "/#work": work,
+  "/#work": work,
   "/#team": team,
   "/#blog": blog,
   "/#contact": contact,
@@ -36,6 +37,40 @@ rootDiv.innerHTML = routes[window.location.pathname.split("?")[0]];
 const onNavigate = (pathname: string): void => {
   window.scrollTo(0, 0);
   window.history.pushState({}, pathname, window.location.origin + pathname);
+  try {
+    const element = document.querySelector(
+      pathname.split("?")[0].replace("/", "")
+    )!;
+    const element2 = document.querySelector("#home");
+    if (element2) element2.className = "!text-white !font-semibold";
+    if (element) {
+      console.log(pathname, "path");
+      if (pathname)
+        Object.keys(routes).forEach((routeName) => {
+          try {
+            const element = document.querySelector(
+              routeName.split("?")[0].replace("/", "") ?? "home"
+            )!;
+            if (element) element.className = "!text-black";
+          } catch (error) {}
+        });
+      element.className = "!text-blue-600 !font-semibold";
+    }
+  } catch (e) {
+    if (pathname.split("?")[0].replace("/", "") === "home" || pathname) {
+      Object.keys(routes).forEach((routeName) => {
+        try {
+          const element = document.querySelector(
+            routeName.split("?")[0].replace("/", "") ?? "home"
+          )!;
+          if (element) element.className = "!text-black";
+        } catch (error) {}
+      });
+      const element2 = document.querySelector("#home");
+      if (element2) element2.className = "!text-blue-600 !font-semibold";
+    }
+  }
+
   rootDiv.innerHTML =
     routes[pathname.split("?")[0]] ||
     `<section class="bg-white dark:bg-gray-900 ">
