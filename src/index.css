@@ -226,16 +226,16 @@ circle {
   background-color: black;
 }
 .slide1 {
-  background-image: url("/site/Devikot_site1.jpg");
+  background-image: url("/site/devikot_site4.jpg");
 }
 .slide2 {
-  background-image: url("/site/devikot_site3.jpg");
+  background-image: url("/devikot_site6.jpg");
 }
 .slide3 {
-  background-image: url("/site/devikot_site7.jpg");
+  background-image: url("/site/seasonaltilt-plant.jpg");
 }
 .slide4 {
-  background-image: url("/site/devikot_site5.jpg");
+  background-image: url("/site/devikot_site3.jpg");
 }
 .slider {
   position: absolute;
