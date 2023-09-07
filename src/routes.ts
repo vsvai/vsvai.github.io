@@ -12,7 +12,6 @@ import faq from "./views/faq.html?raw";
 import solution from "./views/solution.html?raw";
 
 import "./index.css";
-import path from "path";
 
 const routes: Record<string, string> = {
   "/": home,
