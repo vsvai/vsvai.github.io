@@ -41,7 +41,9 @@ const onNavigate = (pathname: string): void => {
       pathname.split("?")[0].replace("/", "")
     )!;
     const element2 = document.querySelector("#home");
-    if (element2) element2.className = "!text-white !font-semibold";
+    if (element2)
+      element2.className =
+        "!text-white !font-semibold font-medium  py-3 md:py-6 !text-blue-600 !font-semibold";
     if (element) {
       console.log(pathname, "path");
       if (pathname)
@@ -50,10 +52,13 @@ const onNavigate = (pathname: string): void => {
             const element = document.querySelector(
               routeName.split("?")[0].replace("/", "") ?? "home"
             )!;
-            if (element) element.className = "!text-black";
+            if (element)
+              element.className =
+                "!text-gray-600 hover:!text-gray-800 font-medium  py-3 md:py-6 !font-semibold";
           } catch (error) {}
         });
-      element.className = "!text-blue-600 !font-semibold";
+      element.className =
+        " font-medium  py-3 md:py-6 !text-blue-600 !font-semibold";
     }
   } catch (e) {
     if (pathname.split("?")[0].replace("/", "") === "home" || pathname) {
@@ -62,11 +67,15 @@ const onNavigate = (pathname: string): void => {
           const element = document.querySelector(
             routeName.split("?")[0].replace("/", "") ?? "home"
           )!;
-          if (element) element.className = "!text-black";
+          if (element)
+            element.className =
+              "font-medium !text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500";
         } catch (error) {}
       });
       const element2 = document.querySelector("#home");
-      if (element2) element2.className = "!text-blue-600 !font-semibold";
+      if (element2)
+        element2.className =
+          "font-medium  py-3 md:py-6 !text-blue-600 !font-semibold";
     }
   }
 
