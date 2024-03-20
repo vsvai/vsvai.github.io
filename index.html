@@ -28,6 +28,10 @@
     <meta content="Sudo Yantra" property="twitter:title" />
     <meta content="Sudo Yantra" property="og:description" />
     <meta content="Sudo Yantra" property="twitter:description" />
+    <!-- Add Font Awesome stylesheet link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Import jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -89,6 +93,28 @@
     <div id="app"></div>
 
     <div id="footbar"></div>
+
+    <!-- Back to top button -->
+    <a id="button"></a>
+
+    <script>
+      var btn = $('#button');
+  
+      $(window).scroll(function() {
+          if ($(window).scrollTop() > 550) {
+              btn.addClass('show');
+          } else {
+              btn.removeClass('show');
+          }
+      });
+  
+      btn.on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0}, '300');
+      });
+  </script>
+  
+
     <!-- <section
       id="cookie"
       class="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-gray-800 left-12 bottom-16 dark:border-gray-700 rounded-2xl"
