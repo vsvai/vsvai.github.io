@@ -65,15 +65,21 @@ const submitContactLetter = async (): Promise<void> => {
 
   Sending`;
   // target="_blank" action="https://formsubmit.co/d9400981c02e58081d725662d150f3eb" method="POST"
-  await fetch("https://formsubmit.co/a77931a3ad6784ff5a6da617d277a64f", {
+
+  await fetch("https://api.emailjs.com/api/v1.0/email/send", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      first_name: first_name.value,
-      last_name: last_name.value,
-      email: email.value,
-      details: details.value,
-      phone: phone.value,
+      service_id: "service_7xa5tqi",
+      template_id: "template_t7jwhdf",
+      user_id: "7Fopngk117L_VVFZz",
+      template_params: {
+        first_name: first_name.value,
+        last_name: last_name.value,
+        email: email.value,
+        details: details.value,
+        phone: phone.value,
+      },
     }),
   })
     .then((res) => {
