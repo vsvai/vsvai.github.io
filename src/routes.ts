@@ -10,6 +10,7 @@ import data from "./views/data.html?raw";
 import demo from "./views/demo.html?raw";
 import faq from "./views/faq.html?raw";
 import solution from "./views/solution.html?raw";
+import deletePage from "./views/deletePlaystore.html?raw";
 
 import "./index.css";
 
@@ -28,6 +29,7 @@ const routes: Record<string, string> = {
   "/#demo": demo,
   "/#faq": faq,
   "/#404": data,
+  "/#delete": deletePage,
 };
 
 const rootDiv: any = document.getElementById("app");
