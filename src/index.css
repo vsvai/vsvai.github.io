@@ -17,6 +17,7 @@
   z-index: -1;
   -webkit-animation: sliderShape 5s linear infinite;
 }
+
 @keyframes sliderShape {
   0%,
   100% {
@@ -105,6 +106,7 @@
     transform: translateX(calc(-250px * 7));
   }
 }
+
 
 .slider2 {
   background: white;
@@ -225,7 +227,9 @@ circle {
 .left:hover {
   background-color: black;
 }
-.slide1 {
+
+
+/* .slide1 {
   background-image: url("/site/devikot_site4.jpg");
 }
 .slide2 {
@@ -266,7 +270,7 @@ circle {
   height: 100%;
   z-index: 10;
   transition: 1.2s;
-}
+} */
 .tran {
   transform: scale(1.1);
 }
@@ -325,7 +329,7 @@ circle {
   visibility: visible;
 }
 
-  #button {
+#button {
     margin: 30px;
-  }
+}
 

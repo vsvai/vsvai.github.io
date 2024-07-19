@@ -16,9 +16,10 @@
     "vite": "^4.2.1"
   },
   "dependencies": {
-    "flowbite": "^1.6.5",
+    "@preline/carousel": "^2.3.0",
+    "flowbite": "^1.8.1",
     "path": "^0.12.7",
-    "preline": "^1.8.0",
+    "preline": "^2.3.0",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-posthtml": "^0.0.3"
