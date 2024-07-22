@@ -70,6 +70,11 @@
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.7.tgz"
   integrity sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==
 
+"@preline/carousel@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/@preline/carousel/-/carousel-2.3.0.tgz"
+  integrity sha512-4rHYZKtNTRrO0FFZHjNCZojRm1fwQCL1WYPIm5fn4WkYYO8IvS7s2lPCqD1pAE0I0N8uBgu7cDFq9M+iPXBO/Q==
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.npmjs.org/@sindresorhus/is/-/is-0.7.0.tgz"
@@ -1045,10 +1050,10 @@ find-versions@^3.0.0:
   dependencies:
     semver-regex "^2.0.0"
 
-flowbite@^1.6.5:
-  version "1.6.5"
-  resolved "https://registry.npmjs.org/flowbite/-/flowbite-1.6.5.tgz"
-  integrity sha512-eI4h3pIRI9d7grlYq14r0A01KUtw7189sPLLx/O2i7JyPEWpbleScfYuEc48XTeNjk1xxm/JHgZkD9kjyOWAlA==
+flowbite@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/flowbite/-/flowbite-1.8.1.tgz"
+  integrity sha512-lXTcO8a6dRTPFpINyOLcATCN/pK1Of/jY4PryklPllAiqH64tSDUsOdQpar3TO59ZXWwugm2e92oaqwH6X90Xg==
   dependencies:
     "@popperjs/core" "^2.9.3"
     mini-svg-data-uri "^1.4.3"
@@ -2190,10 +2195,10 @@ posthtml@^0.15.2:
     posthtml-parser "^0.7.2"
     posthtml-render "^1.3.1"
 
-preline@^1.8.0:
-  version "1.9.0"
-  resolved "https://registry.npmjs.org/preline/-/preline-1.9.0.tgz"
-  integrity sha512-zvOexsDBood9gBAQYSwz7iY8TaomtRD0/qxvCnJl3caq5pif6frl8Oe4b4DsxHHD3Clzl4I5RmVKTq9XjMvNJA==
+preline@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/preline/-/preline-2.3.0.tgz"
+  integrity sha512-mBMF7NTbbhC2wp+1RHbBaHUCXsdM9ObJo64LvDcNRSKLbaC4uszkqBZ/X/paklEQh3+dOUAVBp1zvE5yQf/czw==
   dependencies:
     "@popperjs/core" "^2.11.2"
 
