@@ -1,94 +1,90 @@
-
-<header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white text-sm py-3 md:py-0 dark:bg-gray-800">
-  <div class="max-w-[85rem] w-full mx-auto px-2 md:px-6 lg:px-8" aria-label="Global">
+<header
+  class="absolute md:top-5 flex flex-wrap flex-col md:justify-start md:flex-nowrap z-40 w-full bg-transparent text-sm py-3 md:py-0 dark:bg-gray-800"
+>
+  <nav
+    id="first-nav"
+    class="max-w-[85rem] w-full mx-auto px-2 md:px-6 lg:px-8"
+    aria-label="Global"
+  >
     <div class="relative md:flex md:items-center md:justify-between">
-      <div class="flex items-center justify-between gap-4">
-          <img src="./mainlogo.png" alt="" class="n06_logo" width="50px" />
-        <a class="flex-none text-xl font-semibold dark:text-white" href="#" onclick="onNavigate('/'); return false;" aria-label="Brand">SudoYantra India</a>
-        <div class="md:hidden">
-          <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-            <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-            <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      <div class="w-full flex items-center justify-between gap-4">
+        <img src="./mainlogo.png" alt="" class="n06_logo" width="75px" />
+        <a
+          class="md:absolute left-20 md:text-2xl flex-none text-xl font-semibold dark:text-white"
+          href="#"
+          onclick="onNavigate('/'); return false;"
+          aria-label="Brand"
+          >SudoYantra India</a
+        >
+        <div>
+          <button
+            type="button"
+            class="px-4 py-4 rounded-full bg-white h-12 flex justify-center items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              width="17.5"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+              />
             </svg>
           </button>
         </div>
       </div>
-
-      <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
-        <div class="overflow-hidden overflow-y-auto max-h-[75vh] scrollbar-y">
-          <div class="flex flex-col gap-x-0 mt-5 divide-y divide-dashed divide-gray-200 md:flex-row md:items-center md:justify-end md:gap-x-7 md:mt-0 md:pl-7 md:divide-y-0 md:divide-solid dark:divide-gray-700">
-            <a class="font-medium text-blue-600 py-3 md:py-6 dark:text-blue-500" id="home" href="#" onclick="onNavigate('/'); return false;" aria-current="page">Home</a>
-            <a class="font-medium  py-3 md:py-6 dark:text-blue-500" id="about" href="#" onclick="onNavigate('/#about'); return false;" aria-current="page">About</a>
-            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" id="product" href="#" onclick="onNavigate('/#product'); return false;">
-              Product
-            </a>
-            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" id="solution" href="#" onclick="onNavigate('/#solution'); return false;">
-              Solutions
-            </a>
-            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" id="work" href="#" onclick="onNavigate('/#work'); return false;">
-              Work
-            </a>
-            <a class="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500" id="contact" href="#" onclick="onNavigate('/#contact'); return false;">
-              Contact
-            </a>
-            <div class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] py-3 md:py-6">
-              <button type="button" class="flex items-center w-full text-gray-800 hover:text-gray-600 font-medium dark:text-gray-200 dark:hover:text-gray-500">
-                More
-                <svg class="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-                </svg>
-              </button>
-
-              <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-28 hidden z-10 bg-white md:shadow-2xl rounded-lg py-2 md:p-2 dark:bg-gray-800 dark:divide-gray-700 before:absolute top-full before:-top-5 before:left-0 before:w-full before:h-5">
-             
-                <!-- <a class="inline-flex gap-x-5 w-full p-4 text-gray-600 rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#" onclick="onNavigate('/#contact'); return false;">
-                  <svg class="flex-shrink-0 w-5 h-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 7a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
-                    <path d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1v2H2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2h-1V7h1a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm0 7v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-3-4v2H4V7h8z"/>
-                  </svg>
-                  
-                  <div class="grow">
-                    <span class="block font-semibold mb-1 text-gray-800 dark:text-gray-200">Contact Us</span>
-                    If you have any questions or feedback, please contact us via calls, mails or enquiry.                  </div>
-                </a> -->
-
-                <!-- <div class="my-2 border-t border-gray-100 dark:border-gray-800"></div> -->
-                <a class="inline-flex gap-x-5 w-full p-4 text-gray-600 rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#" onclick="onNavigate('/#faq'); return false;">
-               
-                  <div class="grow">
-                    <span class="block font-semibold mb-1 text-gray-800 dark:text-gray-200">Faqs</span>
-                     
-                  </div>
-                </a>
-              
-
-                <div class="my-2 border-t border-gray-100 dark:border-gray-800"></div>
-
-                <a class="inline-flex gap-x-5 w-full p-4 text-gray-600 rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"  href="#" onclick="onNavigate('/#blog'); return false;">
-               
-                  <div class="grow">
-                    <span class="block font-semibold mb-1 text-gray-800 dark:text-gray-200">Blog</span>
-                  
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="pt-3 md:pt-0">
-              <a class="inline-flex justify-center items-center gap-x-2 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-2.5 px-3 dark:focus:ring-offset-gray-800" href="#" onclick="onNavigate('/#contact'); return false;">
-                Request demo
-              </a>
-            </div> -->
-            <div class="pt-3 md:pt-0"></div>
-          </div>
-        
-        </div>
-      </div>
     </div>
   </nav>
-  
+  <nav
+    id="second-nav"
+    class="max-w-[85rem] w-full px-2 md:px-6 lg:px-8 z-50 bg-black text-white p-2 flex justify-between items-center"
+    aria-label="Global"
+  >
+    <div class="flex items-center gap-x-2">
+      <img
+        src="./mainlogo.png"
+        alt="SudoYantra India Logo"
+        class="n06_logo"
+        width="45px"
+      />
+      <h1 class="font-semibold hidden md:block">SudoYantra India</h1>
+    </div>
+    <ul class="flex md:static absolute right-16 justify-center items-center list-none md:gap-x-10 gap-x-5">
+      <li>
+        <a href="#" class="hover:text-gray-400 transition-colors hidden md:block">Products</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-400 transition-colors"
+          >Request a Demo</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="text-green-400 hover:text-green-300 transition-colors"
+          >Order now</a
+        >
+      </li>
+    </ul>
+    <button
+      type="button"
+      class="px-4 py-4 rounded-full bg-transparent h-12 flex justify-center items-center"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="20"
+        width="17.5"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="#ffffff"
+          d="M0 96C0 78.3 14.3 64 32 64h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"
+        />
+      </svg>
+    </button>
+  </nav>
 </header>
 
 <!-- // onclick="smoothScroll(document.getElementById('solar'))" -->

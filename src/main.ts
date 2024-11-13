@@ -288,4 +288,16 @@ const submitDeleteLetter = async (): Promise<void> => {
 
 
 
+window.addEventListener("scroll", () => {
+  const firstNav = document.getElementById("first-nav") as HTMLElement;
+  const secondNav = document.getElementById("second-nav") as HTMLElement;
+
+  if (window.scrollY > 10) {
+    firstNav.classList.add("hidden"); // Hide the first nav
+    secondNav.classList.add("visible"); // Show the second nav
+  } else {
+    firstNav.classList.remove("hidden"); // Show the first nav when scrolled back up
+    secondNav.classList.remove("visible"); // Hide the second nav when scrolled back up
+  }
+});
 
