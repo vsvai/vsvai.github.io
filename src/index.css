@@ -333,3 +333,29 @@ circle {
     margin: 30px;
 }
 
+/* CSS for smooth hiding and showing */
+/* Transitions for first-nav */
+#first-nav {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#first-nav.hidden {
+  opacity: 0;
+  display: hidden;
+}
+
+/* second-nav should have position sticky in the default state */
+#second-nav {
+  position: fixed; 
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 50; /* Ensure it’s above other elements */
+  opacity: 0; /* Hidden by default */
+  visibility: hidden; /* Hidden by default */
+}
+
+/* Visible state for second-nav */
+#second-nav.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
