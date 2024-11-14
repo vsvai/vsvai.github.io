@@ -358,3 +358,8 @@ circle {
   visibility: visible;
 }
 
+/* close scrolling while on nav menu */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; /* Ensure page doesn’t scroll */
+}
