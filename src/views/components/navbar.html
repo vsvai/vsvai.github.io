@@ -40,31 +40,40 @@
   </nav>
   <nav
     id="second-nav"
-    class="md:max-w-[85rem] w-full self-center px-2 md:px-6 lg:px-8 z-50 bg-black text-white p-2 flex justify-between items-center"
+    class="md:max-w-[85rem] w-full self-center px-2 md:px-6 lg:px-8 z-[100] bg-black text-white p-2 flex justify-between items-center"
     aria-label="Global"
   >
     <div class="flex items-center gap-x-2">
-      <img
-        src="./mainlogo.png"
-        alt="SudoYantra India Logo"
-        class="n06_logo"
-        width="45px"
-      />
-      <h1 class="font-semibold hidden md:block">SudoYantra India</h1>
+      <a href="#"
+        ><img
+          src="./mainlogo.png"
+          alt="SudoYantra India Logo"
+          class="n06_logo"
+          width="45px"
+      /></a>
+      <h1 class="font-semibold hidden md:block">
+        <a href="#" onclick="onNavigate('/'); return false;"
+          >SudoYantra India</a
+        >
+      </h1>
     </div>
-    <ul class="flex md:static absolute right-16 justify-center items-center list-none md:gap-x-10 gap-x-5">
+    <ul class="flex justify-center items-center list-none md:gap-x-10 gap-x-8">
       <li>
-        <a href="#" class="hover:text-gray-400 transition-colors hidden md:block">Products</a>
+        <a
+          href="#product"
+          class="hover:text-gray-400 transition-colors hidden md:block"
+          >Products</a
+        >
       </li>
       <li>
-        <a href="#" class="hover:text-gray-400 transition-colors"
+        <a href="#contact" class="hover:text-gray-400 transition-colors"
           >Request a Demo</a
         >
       </li>
       <li>
         <a
           href="#"
-          class="text-green-400 hover:text-green-300 transition-colors"
+          class="text-green-400 hover:text-green-300 transition-colors font-semibold"
           >Order now</a
         >
       </li>
@@ -89,34 +98,86 @@
   </nav>
 </header>
 
-<section  class="nav-menu fixed hidden top-0 z-[100] navbar-menu h-screen w-full text-black">
-  <div class="md:min-h-[80%] min-h-full w-full md:bg-white bg-black p-8 flex text-white md:text-black border">
-    <button class="absolute md:right-4 right-8 md:top-4 top-10" id="closeBtn">
-      <svg class="md:bg-inherit bg-white" xmlns="http://www.w3.org/2000/svg" height="24" width="28" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+<section
+  class="nav-menu fixed hidden top-0 z-[100] navbar-menu h-screen w-full text-black"
+>
+  <div
+    class="md:min-h-[60%] min-h-full w-full md:bg-white bg-black p-8 flex text-white md:text-black border"
+  >
+    <button class="absolute md:right-4 right-8 md:top-4 top-9" id="closeBtn">
+      <svg
+        class="md:bg-inherit bg-white"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24"
+        width="28"
+        viewBox="0 0 384 512"
+      >
+        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+        />
+      </svg>
     </button>
-    <div class="md:w-2/5 hidden max-h-full md:grid grid-rows-2 text-center justify-items-center gap-y-2 border-r border-black-400">
-      <div class="border rounded-lg p-2 border-gray-400">
-        <img width="300px" src="/product_1.jpg" alt="">
-        <h3 class="font-semibold text-lg flex items-center gap-2 justify-end">SY401S <span><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span></h3>
+    <div
+      class="md:w-2/5 hidden max-h-full md:grid grid-rows-2 text-center justify-items-center gap-y-2 border-r border-black-400"
+    >
+      <div
+        class="border rounded-lg p-2 border-gray-400 flex flex-col justify-center items-center gap-y-8"
+      >
+        <img width="300px" src="/product_1.jpg" alt="" />
+        <h3
+          class="font-semibold text-lg flex items-center gap-2 justify-center"
+        >
+          SY401S
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            width="17.5"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
+        </h3>
       </div>
-      <div class="border rounded-lg p-2 border-gray-400">
-        <img width="300px" src="/product_2.jpg" alt="">
-        <h3 class="font-semibold text-lg flex items-center gap-2 justify-end">SY401A <span><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span></h3>
+      <div
+        class="border rounded-lg p-2 border-gray-400 flex flex-col justify-center items-center gap-y-8"
+      >
+        <img width="300px" src="/product_2.jpg" alt="" />
+        <h3
+          class="font-semibold text-lg flex items-center gap-2 justify-center"
+        >
+          SY401A<svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            width="17.5"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
+        </h3>
       </div>
     </div>
-    <div class="md:w-3/5 w-full max-h-full md:grid flex flex-col  md:grid-cols-3 md:px-24 gap-y-12 mt-16  md:gap-x-2">
+    <div
+      class="md:w-3/5 w-full max-h-full md:grid flex flex-col lg:grid-cols-3 md:px-24 lg:px-24 gap-y-12 md:gap-x-2"
+    >
       <div>
-        <h2 class="font-semibold md:text-gray-400 mb-6">Tech & Design</h2>
+        <h2 class="font-semibold text-gray-400 mb-6 text-lg">Tech & Design</h2>
         <ul class="font-semibold flex flex-col items-stretch gap-y-5">
           <li>App</li>
-          <li>Dashobard</li>
-          <li>Manufacturing</li>
+          <li>
+            <a href="http://app.sudoyantra.com" target="_blank">Dashobard</a>
+          </li>
           <li>Performance</li>
-          <li>Design</li>
         </ul>
       </div>
       <div>
-        <h2 class="font-semibold md:text-gray-400 mb-6">Our Services</h2>
+        <h2 class="font-semibold text-gray-400 mb-6 text-lg">Our Services</h2>
         <ul class="font-semibold flex flex-col items-stretch gap-y-5">
           <li>Solar Cleaner</li>
           <li>On site installation</li>
@@ -124,18 +185,18 @@
         </ul>
       </div>
       <div>
-        <h2 class="font-semibold md:text-gray-400 mb-6">Our Company</h2>
+        <h2 class="font-semibold text-gray-400 mb-6 text-lg">Our Company</h2>
         <ul class="font-semibold flex flex-col items-stretch gap-y-5">
-          <li>About Us</li>
-          <li>Solutions</li>
-          <li>Works</li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#work">Work</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="min-h-[20%] md:block hidden w-full bg-[#7C7C7C]">
-
-  </div>
+  <div
+    class="md:min-h-[40%] md:block hidden w-full bg-[#7C7C7C] md:bg-black md:opacity-50"
+  ></div>
 </section>
 
 <!-- // onclick="smoothScroll(document.getElementById('solar'))" -->
