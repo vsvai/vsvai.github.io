@@ -347,7 +347,7 @@ circle {
 #second-nav {
   position: fixed; 
   top: 0;
-  z-index: 50;
+  z-index: 500;
   opacity: 0; 
   visibility: hidden; 
 }

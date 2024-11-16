@@ -18,24 +18,27 @@ if (footbarElement) {
 //   mobileNavElement.innerHTML = mobileNav;
 // }
 
-// Navbar button 
-const navButton = document.getElementById("navButton") as HTMLElement;
-const navMenu = document.getElementsByClassName("nav-menu")[0] as HTMLElement;
-const closeNavButton = document.getElementById("closeBtn") as HTMLElement;
+// Select elements
+const navButton = document.getElementById("navButton")!;
+const secondNavButton = document.getElementById("secondNavButton")
+const closeNavButton = document.getElementById("closeBtn")!;
+const navMenu = document.querySelector(".nav-menu")!;
+const navLinks = document.querySelectorAll(".nav-menu a");
 
-navButton.addEventListener('click', () => {
+// Function to open the navigation menu
+function openMenu() {
   navMenu.classList.remove("hidden");
-  document.body.classList.add("no-scroll"); // Disable scroll
-});
+  document.body.style.overflow = "hidden"; // Disable scrolling
+}
 
-// Closing navbar menu
-closeNavButton.addEventListener('click', () => {
+// Function to close the navigation menu
+function closeMenu() {
   navMenu.classList.add("hidden");
-  document.body.classList.remove("no-scroll"); // Enable scroll
-});
+  document.body.style.overflow = ""; // Enable scrolling
+}
 
-const secondNavButton = document.getElementById("secondNavButton") as HTMLElement;
-secondNavButton.addEventListener("click", ()=>{
-  navMenu.classList.remove("hidden")
-  document.body.classList.add("no-scroll"); // Disable scroll
-})
+// Event listeners
+navButton.addEventListener("click", openMenu);
+secondNavButton?.addEventListener("click", openMenu);
+closeNavButton.addEventListener("click", closeMenu);
+navLinks.forEach((link) => link.addEventListener("click", closeMenu));
