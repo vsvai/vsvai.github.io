@@ -274,7 +274,7 @@ circle {
   border-radius: 5px;
   position: fixed;
   bottom: -20px;
-  right: -20px;
+  right: -10px;
   transition: background-color .3s, 
     opacity .5s, visibility .5s;
   opacity: 0;
@@ -304,6 +304,12 @@ circle {
 
 #button {
     margin: 30px;
+}
+
+@media (max-width: 700px) {
+  #button{
+    right: -20px;
+  }
 }
 
 /* navbar css */
