@@ -329,6 +329,7 @@ circle {
   z-index: 500;
   opacity: 0; 
   visibility: hidden; 
+  min-width: 100%;
 }
 
 /* Visible state for second-nav */
