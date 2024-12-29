@@ -15,10 +15,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#66B741",
-        secondary: "#8f8b67",
-        buttonBg: "#5d5a27",
-        text: "#2d2b1d"
+        primary: "#0075bccc",
+        buttonBg: "#0075BB",
+        secondary: "#16213E",
       },
     },
     fontFamily: {
