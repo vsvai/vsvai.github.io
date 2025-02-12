@@ -28,6 +28,11 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Optimize images
+        run: |
+          npm install -g imagemin-cli
+          imagemin src/images/* --out-dir=dist/images || echo "Image optimization failed, but continuing."
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
