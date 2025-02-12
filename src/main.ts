@@ -301,9 +301,4 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//redirecting qr to page
-const urlParams = new URLSearchParams(window.location.search);
-if (urlParams.has('id')) {
-    // Redirect to the #robot section
-    window.location.href = "https://www.sudoyantra.com/#robot";
-}
+
