@@ -11,7 +11,6 @@ import demo from "./views/demo.html?raw";
 import faq from "./views/faq.html?raw";
 import solution from "./views/solution.html?raw";
 import deletePage from "./views/deletePlaystore.html?raw";
-// import robot from "./views/robot.html?raw"
 
 import "./index.css";
 
@@ -29,7 +28,6 @@ const routes: Record<string, string> = {
   "/#data": data,
   "/#demo": demo,
   "/#faq": faq,
-  // "/#robot": robot,
   "/#404": data,
   "/#delete": deletePage,
 };
