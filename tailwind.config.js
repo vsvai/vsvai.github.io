@@ -23,7 +23,6 @@ export default {
     },
     backgroundImage:{
       // gradient: "linear-gradient(90deg, rgba(139,213,105,1) 0%, rgba(255,255,255,1) 100%)"
-      background: "linear-gradient(90deg, black 11ch, white 11ch)"
     },
     fontFamily: {
       body: [
