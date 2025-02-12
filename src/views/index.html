@@ -1,3 +1,4 @@
+<!-- carousel -->
 <div class="parent relative md:min-h-screen min-h-[80vh] w-fit box-border">
   <!-- Slider -->
   <div
@@ -18,16 +19,19 @@
           alt="..."
         />
         <div
-          class="z-30 md:ml-16 text-white flex flex-col gap-y-6 items-center md:items-start"
+          class="hidden md:block h-full relative w-[70%] bg-gradient-to-r from-shade z-10"
+        ></div>
+        <div
+          class="z-30 md:ml-16 md:absolute text-white flex flex-col gap-y-6 items-center md:items-start"
         >
           <h1 class="md:text-[5rem] text-5xl font-semibold">SY401S</h1>
           <p class="md:text-3xl font-semibold">
             Fully automatic with mobile app
           </p>
           <button
-            class="w-fit border border-white rounded-full px-5 py-1 font-semibold"
+            class="w-fit bg-white text-black rounded-full px-6 py-[6px] font-semibold"
           >
-            Explore
+            <a href="#">Explore</a>
           </button>
         </div>
       </div>
@@ -42,16 +46,19 @@
           alt="..."
         />
         <div
-          class="z-50 md:ml-16 text-white flex flex-col gap-y-6 items-center md:items-start"
+          class="hidden md:block h-full relative w-[70%] bg-gradient-to-r from-shade z-10"
+        ></div>
+        <div
+          class="absolute z-50 md:ml-16 text-white flex flex-col gap-y-6 items-center md:items-start"
         >
           <h1 class="md:text-[5rem] text-5xl font-semibold">SY401A</h1>
           <p class="md:text-3xl font-semibold">
             Fully automatic with dashboard
           </p>
           <button
-            class="w-fit border border-white rounded-full px-5 py-1 font-semibold"
+            class="w-fit bg-white text-black rounded-full px-6 py-[6px] font-semibold"
           >
-            Explore
+            <a href="#">Explore</a>
           </button>
         </div>
       </div>
@@ -66,16 +73,19 @@
           alt="..."
         />
         <div
-          class="z-50 md:ml-16 text-white flex flex-col gap-y-6 items-center md:items-start"
+          class="hidden md:block h-full relative w-[70%] bg-gradient-to-r from-shade z-10"
+        ></div>
+        <div
+          class="absolute z-50 md:ml-16 text-white flex flex-col gap-y-6 items-center md:items-start"
         >
           <h1 class="md:text-[5rem] text-5xl font-semibold">SY401S</h1>
           <p class="md:text-3xl font-semibold">
             Fully automatic with mobile app
           </p>
           <button
-            class="w-fit border border-white rounded-full px-5 py-1 font-semibold"
+            class="w-fit bg-white text-black rounded-full px-6 py-[6px] font-semibold"
           >
-            Explore
+            <a href="#">Explore</a>
           </button>
         </div>
       </div>
@@ -90,16 +100,19 @@
           alt="..."
         />
         <div
-          class="z-50 md:ml-16 text-white flex flex-col gap-y-6 items-center md:items-start"
+          class="hidden md:block h-full relative w-[70%] bg-gradient-to-r from-shade z-10"
+        ></div>
+        <div
+          class="absolute z-50 md:ml-16 text-white flex flex-col gap-y-6 items-center md:items-start"
         >
           <h1 class="md:text-[5rem] text-5xl font-semibold">SY401A</h1>
           <p class="md:text-3xl font-semibold">
             Fully automatic with dashboard
           </p>
           <button
-            class="w-fit border border-white rounded-full px-5 py-1 font-semibold"
+            class="w-fit bg-white text-black rounded-full px-6 py-[6px] font-semibold"
           >
-            Explore
+            <a href="#">Explore</a>
           </button>
         </div>
       </div>
@@ -194,7 +207,6 @@
 
   <!-- End Slider -->
 </div>
-
 <span>
   <div
     class="max-w-6xl px-2 py-6 sm:px-4 lg:px-4 lg:py-4 mx-auto fixed right-0 z-50 bottom-0 mb-[3rem]"
@@ -412,7 +424,7 @@
             <div
               class="flex flex-col border border-gray-300 text-center rounded-xl p-8 dark:border-neutral-800"
             >
-              <div>
+              <div class="hover:scale-105 duration-200 hover:duration-200">
                 <img src="/product_1.jpg" alt="" />
               </div>
               <h4
@@ -511,7 +523,7 @@
               </ul>
 
               <a
-                class="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-md font-medium rounded-lg border border-black bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-50 dark:bg-transparent dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                class="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-md font-medium rounded-lg border border-black bg-white text-black shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-50 dark:bg-transparent dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
                 href="#contact"
               >
                 Buy now
@@ -524,11 +536,11 @@
               class="relative flex flex-col border-2 border-gray-700 text-center shadow-xl rounded-xl p-8"
             >
               <div
-                class="absolute -top-5 right-20 md:right-8 inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xl uppercase font-semibold bg-secondary border border-gray-300 text-white dark:text-white"
+                class="absolute -top-5 right-28 md:right-8 inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xl uppercase font-semibold text-black bg-secondary border border-gray-300 dark:text-white"
               >
                 Most popular
               </div>
-              <div>
+              <div class="hover:scale-105 duration-200 hover:duration-200">
                 <img src="/product_2.jpg" />
               </div>
               <h4
@@ -643,7 +655,7 @@
               </ul>
 
               <a
-                class="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-md font-medium rounded-lg border border-transparent bg-secondary text-white focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                class="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-md font-medium rounded-lg border border-transparent bg-secondary text-black focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                 href="#contact"
               >
                 Buy now
@@ -656,8 +668,6 @@
           <!-- End Pricing -->
         </div>
       </div>
-
-
 
       <!-- offering products -->
       <section class="bg-white">
@@ -673,10 +683,10 @@
 
             <p class="mt-6 text-black md:leading-8 sm:text-xl">
               We also provide:
-              <span class="bg-gray-500 text-white px-1">
+              <span class="bg-light text-black p-[1px] rounded-lg">
                 Custom robot development </span
               >, where we create robots from scratch.
-              <span class="bg-gray-500 text-white px-1"
+              <span class="bg-light text-black p-[1px] rounded-lg"
                 >Advanced customization services</span
               >, where we enhance and upgrade your existing robots.
             </p>
@@ -699,7 +709,7 @@
                     Seamless global control and real-time monitoring of robots.
                   </div>
                   <span
-                    class="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-secondary text-white py-1.5 px-3 dark:bg-gray-900"
+                    class="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-sm font-medium bg-secondary text-black py-1.5 px-3 dark:bg-gray-900"
                     >Most popular</span
                   >
 
@@ -837,7 +847,7 @@
                     Time based Cleaning with Mobile App for controls.
                   </div>
                   <span
-                    class="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-secondary text-white py-1.5 px-3 dark:bg-gray-900"
+                    class="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-sm font-medium bg-secondary text-black py-1.5 px-3 dark:bg-gray-900"
                     >Most popular</span
                   >
 
@@ -1122,10 +1132,10 @@
           Product Feature
         </h1>
         <!-- grid -->
-        <div class="grid md:grid-cols-9 md:grid-rows-3 gap-y-16">
+        <div class="relative grid md:grid-cols-9 md:grid-rows-3 gap-y-6">
           <!-- card 1 -->
           <div
-            class="col-span-4 flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="col-span-4 flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2 text-gray-900 bg-light p-4 rounded-xl"
           >
             <div>
               <div class="p-1">
@@ -1150,7 +1160,7 @@
 
           <!-- card 3 -->
           <div
-            class="col-span-4 flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
           >
             <div>
               <div class="p-1">
@@ -1171,7 +1181,7 @@
 
           <!-- card 4 -->
           <div
-            class="col-span-4 flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
           >
             <div>
               <div class="p-1">
@@ -1191,7 +1201,7 @@
           </div>
           <!-- card 5 -->
           <div
-            class="col-span-4 flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
           >
             <div>
               <div class="p-1">
@@ -1202,7 +1212,7 @@
                 />
               </div>
             </div>
-            <div class="w-[85%] text-center md:text-left">
+            <div class="w-[85%] text-gray-900 text-center md:text-left">
               <h3 class="text-2xl font-bold">OTA Updates</h3>
               <p class="font-semibold">
                 Publish updates and add features to robots effortlessly online.
@@ -1211,7 +1221,7 @@
           </div>
           <!-- card 6 -->
           <div
-            class="col-span-4 flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
           >
             <div>
               <div class="p-1">
@@ -1232,7 +1242,7 @@
           </div>
           <!-- card 7 -->
           <div
-            class="col-span-4 flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
           >
             <div>
               <div class="p-1">
@@ -1254,21 +1264,25 @@
       </div>
 
       <div
-        class="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-8 lg:py-10 mx-auto grid  md:grid-cols-2 "
+        class="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-8 lg:py-10 mx-auto grid md:grid-cols-2"
       >
         <!-- clients -->
-        <div >
+        <div>
           <h1 class="text-center h-fit font-semibold text-3xl md:text-6xl">
             Our Clients
           </h1>
           <div
             class="grid place-items-center justify-items-center gap-y-5 md:mt-10 mt-4"
           >
-            <img class="md:h-28 h-16 object-contain" src="/Clients/AMNS.png" alt="" />
+            <img
+              class="md:h-28 h-16 object-contain"
+              src="/Clients/AMNS.png"
+              alt=""
+            />
           </div>
         </div>
         <!-- recognized by -->
-        <div class="relative ">
+        <div class="relative">
           <h1 class="text-center h-fit font-semibold text-3xl md:text-6xl">
             Recognized by
           </h1>
@@ -1296,7 +1310,7 @@
           Supported by
         </h1>
         <div
-          class="grid  md:grid-cols-4 place-items-center justify-items-center gap-y-5 mt-10"
+          class="grid md:grid-cols-4 place-items-center justify-items-center gap-y-5 mt-10"
         >
           <img
             class="md:w-50 md:h-15 h-10 object-contain"
@@ -1314,9 +1328,7 @@
       </div>
 
       <!-- Glimpses -->
-      <div
-        class="max-w-[75rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
-      >
+      <div class="max-w-[75rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <h1 class="text-4xl md:text-6xl text-center font-semibold mb-16">
           Robots Empowering the Future
         </h1>
@@ -1812,9 +1824,7 @@
       </div>
 
       <section class="section h-full">
-        <div
-          class="max-w-[85rem] px-4  sm:px-6 lg:px-8 mx-auto"
-        >
+        <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
           <div
             class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
           >
@@ -1829,10 +1839,9 @@
               </p>
             </div>
             <div class="grid grid-cols-2 gap-x-5">
-              <img class="rounded-lg" src="/site/devikot_site3.jpg" alt="">
-              <img class="rounded-lg" src="/roof-top.jpg" alt="">
+              <img class="rounded-lg" src="/site/devikot_site3.jpg" alt="" />
+              <img class="rounded-lg" src="/roof-top.jpg" alt="" />
             </div>
-            
           </div>
         </div>
         <!-- <div class="air air1"></div>
@@ -1840,5 +1849,6 @@
         <div class="air air3"></div>
         <div class="air air4"></div> -->
       </section>
-    </div></section
-></span>
+    </div>
+  </section></span
+>
