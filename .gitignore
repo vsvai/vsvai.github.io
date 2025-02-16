@@ -26,3 +26,12 @@ dist-ssr
 # OS generated files
 
 # WebStorm
+
+
+
+
+    # - name: Upload artifact
+    #     uses: actions/upload-pages-artifact@v3
+    #     with:
+    #       # Upload dist repository
+    #       path: "./dist"
