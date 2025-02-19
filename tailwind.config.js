@@ -24,7 +24,7 @@ export default {
       },
     },
     backgroundImage:{
-      // gradient: "linear-gradient(90deg, rgba(139,213,105,1) 0%, rgba(255,255,255,1) 100%)"
+      gradient: "radial-gradient(circle, rgba(193,242,176,1) 0%, rgba(255,255,255,1) 100%)"
     },
     fontFamily: {
       body: [

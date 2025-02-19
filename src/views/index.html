@@ -1132,10 +1132,10 @@
           Product Feature
         </h1>
         <!-- grid -->
-        <div class="relative grid md:grid-cols-9 md:grid-rows-3 gap-y-6">
+        <div class="grid md:grid-cols-2 md:grid-rows-3 gap-x-4 gap-y-6">
           <!-- card 1 -->
           <div
-            class="col-span-4 flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2 text-gray-900 bg-light p-4 rounded-xl"
+            class="flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2 text-gray-900 bg-gradient p-4 rounded-xl border border-primary"
           >
             <div>
               <div class="p-1">
@@ -1151,16 +1151,9 @@
             </div>
           </div>
 
-          <!-- card2 -->
-          <div
-            class="hidden col-span-1 row-span-3 md:flex items-center justify-between p-5 gap-x-8"
-          >
-            <!-- <img class="h-full w-full object-contain" src="app-4.jpeg" alt=""> -->
-          </div>
-
           <!-- card 3 -->
           <div
-            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="text-gray-900 bg-gradient p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2 border border-primary"
           >
             <div>
               <div class="p-1">
@@ -1181,7 +1174,7 @@
 
           <!-- card 4 -->
           <div
-            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="text-gray-900 bg-gradient p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2 border border-primary"
           >
             <div>
               <div class="p-1">
@@ -1201,7 +1194,7 @@
           </div>
           <!-- card 5 -->
           <div
-            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="text-gray-900 bg-gradient p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2 border border-primary"
           >
             <div>
               <div class="p-1">
@@ -1221,7 +1214,7 @@
           </div>
           <!-- card 6 -->
           <div
-            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="text-gray-900 bg-gradient p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2 border border-primary"
           >
             <div>
               <div class="p-1">
@@ -1242,7 +1235,7 @@
           </div>
           <!-- card 7 -->
           <div
-            class="col-span-4 text-gray-900 bg-light p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2"
+            class="text-gray-900 bg-gradient p-4 rounded-xl flex md:items-start md:flex-row flex-col items-center justify-between gap-x-2 border border-primary"
           >
             <div>
               <div class="p-1">
@@ -1262,32 +1255,44 @@
           </div>
         </div>
       </div>
-
-      <div
-        class="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-8 lg:py-10 mx-auto grid grid-cols-2"
-      >
-        <!-- clients -->
-        <div>
-          <h1 class="text-3xl md:text-5xl text-center font-semibold mb-4">
+      <!-- Clients -->
+      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Grid -->
+        <!-- Title -->
+        <div class="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center mb-6">
+          <h1 class="text-center h-fit font-semibold text-4xl md:text-6xl">
             Clients
           </h1>
-          <div
-            class="grid place-items-center justify-items-center gap-y-5 mt-4 "
-          >
+        </div>
+        <!-- End Title -->
+        <div class="grid grid-cols-2 gap-3 justify-items-stretch">
+          <div class="p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-neutral-800">
             <img
-              class="md:h-32 h-14 object-contain"
+              class="rounded-lg md:h-60 mx-auto"
               src="/Clients/AMNS.png"
               alt=""
             />
           </div>
+
+          <div class="p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-neutral-800">
+            <img
+              class="rounded-lg md:h-60 mx-auto"
+              src="/Clients/AV.png"
+              alt=""
+            />
+          </div>
         </div>
+        <!-- End Grid -->
+      </div>
+      <!-- End Clients -->
+      <div class="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-8 lg:py-10 mx-auto">
         <!-- recognized by -->
         <div class="relative">
           <h1 class="text-center h-fit font-semibold text-3xl md:text-5xl">
             Recognized by
           </h1>
           <div
-            class="grid place-items-center justify-items-center gap-y-5 mt-4"
+            class="grid place-items-center justify-items-center gap-y-5 mt-4 bg-gray-100 w-fit mx-auto p-8 rounded-lg"
           >
             <img
               class="md:min-h-full h-[8vh] md:h-[15vh] object-contain"
@@ -1295,37 +1300,57 @@
               alt=""
             />
             <h4
-              class="absolute font-semibold text-lg md:text-2xl md:top-[90%] sm:top-[105%] top-[100%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              class="absolute font-semibold text-lg md:text-2xl md:top-[90%] sm:top-[90%] top-[90%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
             >
               DIPP144606
             </h4>
           </div>
         </div>
       </div>
-      <!-- supported by -->
+      <!-- Clients -->
       <div
-        class="hidden md:block relative max-w-[85rem] px-4 py-6 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+        class="hidden md:block max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
       >
-        <h1 class="text-center h-fit font-semibold text-4xl md:text-6xl">
-          Supported by
-        </h1>
-        <div
-          class="grid md:grid-cols-4 place-items-center justify-items-center gap-y-5 mt-10"
-        >
-          <img
-            class="md:w-50 md:h-15 h-10 object-contain"
-            src="/autodesk.jpg"
-            alt=""
-          />
-          <img class="w-40 h-15 object-contain" src="./aws.png" alt="" />
-          <img
-            class="md:w-50 md:h-15 h-10 object-contain"
-            src="./digitalocean.png"
-            alt=""
-          />
-          <img class="w-40 h-15 object-contain" src="./zoho.png" alt="" />
+        <!-- Title -->
+        <div class="sm:w-1/2 xl:w-1/3 mx-auto text-center mb-6 md:mb-12">
+          <h2
+            class="text-xl font-semibold md:text-5xl md:leading-tight text-black dark:text-neutral-200"
+          >
+            Supported by
+          </h2>
         </div>
+        <!-- End Title -->
+
+        <!-- supoorted by -->
+        <div class="grid grid-cols-4 gap-3 lg:gap-6">
+          <div
+            class="p-4 bg-gray-100 rounded-lg dark:bg-neutral-800 flex justify-center items-center"
+          >
+            <img class="rounded-lg" src="/supported by/autodesk.png" alt="" />
+          </div>
+          <div
+            class="p-4 bg-gray-100 rounded-lg dark:bg-neutral-800 flex justify-center items-center"
+          >
+            <img class="rounded-lg" src="/supported by/aws.png" alt="" />
+          </div>
+          <div
+            class="p-4 bg-gray-100 rounded-lg dark:bg-neutral-800 flex justify-center items-center"
+          >
+            <img
+              class="rounded-lg"
+              src="/supported by/digitalocean.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="p-4 bg-gray-100 rounded-lg dark:bg-neutral-800 flex justify-center items-center"
+          >
+            <img class="rounded-lg" src="/supported by/zoho.png" alt="" />
+          </div>
+        </div>
+        <!-- End Grid -->
       </div>
+      <!-- End Clients -->
 
       <!-- Glimpses -->
       <div class="max-w-[75rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -1825,9 +1850,7 @@
 
       <section class="section h-full">
         <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
-          <div
-            class="max-w-[85rem] py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
-          >
+          <div class="max-w-[85rem] py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
             <!-- Title -->
             <div class="mx-auto text-black mb-8 lg:mb-14 text-center">
               <h2 class="text-3xl md:text-6xl font-bold dark:text-gray-200">
@@ -1839,12 +1862,19 @@
               </p>
             </div>
             <div class="grid grid-cols-2 gap-x-5">
-              <img class="rounded-lg min-w-[40vw]" src="/product feasiability/1.webp" alt="" />
-              <img class="rounded-lg min-w-[40vw]" src="/product feasiability/2.webp" alt="" />
+              <img
+                class="rounded-lg min-w-[40vw]"
+                src="/product feasiability/1.webp"
+                alt=""
+              />
+              <img
+                class="rounded-lg min-w-[40vw]"
+                src="/product feasiability/2.webp"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </section>
-    </div>
-  </section></span
->
+    </div></section
+></span>
