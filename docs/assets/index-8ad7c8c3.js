@@ -156,12 +156,12 @@
             d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
           />
         </svg>
-        Call us : +91 99840 45295
+        Call us : +91 931 848 3909
       </strong>
 
       <a
         class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-black hover:bg-transparent hover:text-black hover:border hover:border-black hover:bg-white focus:outline-none focus:ring active:bg-white/90"
-        href="https://wa.me/919984045295"
+        href="https://wa.me/919318483909"
         target="_blank"
       >
         <span class="text-sm font-medium"> Request Demo </span>
